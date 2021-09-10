@@ -149,8 +149,6 @@ nav {
     padding: 0;
 }
 
-.navbar-nav .nav-item:nth-child(6) a {}
-
 .navbar-nav .nav-item:nth-child(5) a {
     color: #FFF200;
 }
@@ -347,6 +345,7 @@ Them vao gio - Animation
     transition-delay: 0.6s;
     background: rgb(19, 12, 114);
     text-decoration: none;
+    color: white
 }
 
 .btn3 i {
@@ -643,23 +642,19 @@ select {
 
 /*-------------Middler-------------*/
 
-.middle-container {
-    padding-top: 30px;
+.middle-container1 {
+    padding-top: 20px;
 }
 
-.middler img {
-    width: 100%;
-    justify-content: center;
-    height: 60px;
-    border-radius: 7px;
-    margin-left: -10px;
+.middle-container {
+    margin-top: 30px;
 }
 
 
 /*------------------footer-----------------*/
 
-.text-white {
-    margin: 0 12px;
+.logo1 {
+    margin: 0 6px;
 }
 
 .bct {
@@ -802,10 +797,28 @@ select {
     color: blue;
 }
 
-.h2-cate {
+.title-adver-banner {
     background-color: #d7202c;
-    padding: 6px 0;
     width: 100%;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.adver-banner-viewall {
+    color: #fff;
+}
+
+.adver-banner-viewall:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.viewall-icon {
+    margin-left: 6px;
+}
+
+.h2-cate {
+    padding: 6px 0;
     color: #fff;
 }
 
@@ -840,10 +853,83 @@ select {
 }
 
 
+/*--------------Promote Products---------------*/
+
+.promote-item {
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.promote-item a {
+    color: rgb(70, 68, 68);
+}
+
+.promote-item {
+    position: relative;
+}
+
+.promote-item-buy {
+    position: absolute;
+    background-color: rgba(110, 106, 106, 0.5);
+    bottom: 42%;
+    right: 0;
+    width: 100%;
+    height: 0%;
+    align-items: center;
+    padding: 0 6px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.promote-item:hover .promote-item-buy {
+    height: 20%;
+    visibility: visible;
+    transition: all 0.3s ease;
+}
+
+.promote-item-buy>a {
+    color: #fff;
+}
+
+.promote-item-buy>a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.promote-item-buy button {
+    padding: 3px 6px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    background-color: black;
+    transition: all 0.3s ease;
+}
+
+.promote-item-buy button:hover {
+    color: black;
+    background-color: tomato;
+}
+
+.promote-item>a:hover {
+    text-decoration: none;
+    color: rgb(160, 3, 81)
+}
+
+.promote-first-price {
+    color: rgb(173, 171, 171);
+    font-size: 14px;
+}
+
+.promote-last-price {
+    font-weight: bold;
+    color: #d7202c
+}
+
+
 /*---------------Watch--------------*/
 
 .watch {
-    padding: 40px 0 20px;
+    padding: 20px 0 20px;
 }
 
 .owl-prev,
@@ -859,6 +945,10 @@ select {
 
 .owl-next {
     right: 0;
+}
+
+.index-product-bottom-container {
+    margin-top: 20px;
 }
 
 .watch-name:hover {
@@ -980,10 +1070,6 @@ select {
 
 
 /*----------Category.html---------------*/
-
-.p-card {
-    border: 1px solid #eee
-}
 
 .topbanner-cate-img {
     height: 220px;
@@ -1110,6 +1196,7 @@ select {
     background-repeat: no-repeat;
     transition: 1s all;
     font-size: 18px;
+    color: white;
 }
 
 .btn1:hover {
@@ -1174,6 +1261,323 @@ select {
 .rate-ctg {
     margin-top: 12px;
     margin-bottom: -45px;
+}
+
+.laptop-gaming {
+    background-color: #25304b;
+    margin-top: 12px;
+}
+
+.laptop-gaming-banner img {
+    width: 100%;
+}
+
+.laptop-dohoakythuat-container {
+    background-color: #c6c7d1;
+}
+
+.laptop-dohoakythuat img {
+    width: 100%;
+}
+
+
+/*------------------Neon button----------*/
+
+.neon-button-container {
+    margin: 12px 0;
+}
+
+.neon-button {
+    position: relative;
+    padding: 15px 30px;
+    margin: 20px 0;
+    color: #03e9f4;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: 0.5s;
+    overflow: hidden;
+    letter-spacing: 4px;
+    /*     box-shadow: 0 0 25px #03e9f4, 0 0 25px #03e9f4, 0 0 25px #03e9f4, 0 0 25px #03e9f4;
+ */
+}
+
+.neon-button:hover {
+    background-color: #03e9f4;
+    color: #050801;
+    text-decoration: none;
+    box-shadow: 0 0 25px #03e9f4, 0 0 25px #03e9f4, 0 0 25px #03e9f4, 0 0 25px #05787e;
+}
+
+.neon-button span {
+    position: absolute;
+    display: block;
+}
+
+.neon-button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+    0% {
+        left: -100%;
+    }
+    50%,
+    100% {
+        left: 100%;
+    }
+}
+
+.neon-button span:nth-child(2) {
+    right: 0;
+    top: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2 {
+    0% {
+        top: -100%;
+    }
+    50%,
+    100% {
+        top: 100%;
+    }
+}
+
+.neon-button span:nth-child(3) {
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes animate3 {
+    0% {
+        left: 100%;
+    }
+    50%,
+    100% {
+        left: -100%;
+    }
+}
+
+.neon-button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4 {
+    0% {
+        bottom: -100%;
+    }
+    50%,
+    100% {
+        bottom: 100%;
+    }
+}
+
+.neon-button-container2 {
+    background-color: #203E4E;
+    margin: 0;
+}
+
+.neon-button2 {
+    position: relative;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    font-weight: 500;
+    margin: 20px 0;
+    color: #7cff01;
+}
+
+.neon-button2:hover {
+    text-decoration: none;
+    color: black;
+    background: #7cff01;
+    box-shadow: 0 0 25px #7cff01, 0 0 25px #7cff01, 0 0 25px #7cff01, 0 0 25px #7cff01;
+    transition-delay: 0.3s;
+}
+
+.neon-button2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-top: 2px solid #7cff01;
+    border-left: 2px solid #7cff01;
+    transition: 0.5s;
+}
+
+.neon-button2:hover::before {
+    width: 100%;
+    height: 100%;
+}
+
+.neon-button2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-bottom: 2px solid #7cff01;
+    border-right: 2px solid #7cff01;
+    transition: 0.5s;
+}
+
+.neon-button2:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+.neon-button-container3 {
+    margin-top: 5px;
+}
+
+.neon-button3 {
+    padding: 15px 30px;
+    margin: 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    background-color: #ff2281;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ff2281;
+    transition: all 0.5s ease;
+}
+
+.neon-button3:hover {
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 30px 0;
+    text-transform: uppercase;
+    color: black;
+    letter-spacing: 4px;
+    font-weight: 500;
+    background: #ffd400;
+    box-shadow: 0 0 50px #FFF200;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/*=======Category-LaptopHọc tập----------*/
+
+.laptop-hoctap-banner img {
+    width: 100%;
+}
+
+.text-price {
+    margin-bottom: 5px;
+    color: #d7202c;
+}
+
+.text-old-price {
+    margin-bottom: 1.5rem;
+}
+
+.card-laptophoctap {
+    padding: 12px 6px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.card-body-laptophoctap {
+    margin-bottom: 10px;
+}
+
+.btn-laptophoctap {
+    padding: 10px 20px;
+    border: 1px solid blue;
+    border-radius: 8px;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+}
+
+.btn-laptophoctap:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.laptophoctap {
+    background-color: #2d4b68;
+}
+
+.laptophoctap-container {
+    margin-top: 20px;
+}
+
+.card-img-tiles {
+    display: block;
+    border-bottom: 1px solid #e1e7ec
+}
+
+.card-img-tiles>.inner {
+    display: table;
+    width: 100%
+}
+
+.card-img-tiles .main-img {
+    display: table-cell;
+    width: 70%;
+    padding: 15px;
+    vertical-align: middle;
+    transition: all 0.5s ease;
+}
+
+.main-img:hover {
+    transform: translateY(-10%);
+}
+
+.card-img-tiles .main-img>img:last-child {
+    margin-bottom: 0
+}
+
+.card-img-tiles .main-img>img {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+    padding: .45rem .5rem !important;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem
+}
+
+.card-title {
+    font-weight: 450;
+}
+
+.card-title:hover {
+    color: #d7202c
 }
 
 
@@ -1698,10 +2102,6 @@ body {
     border-bottom: 1px solid #dddddd;
 }
 
-.cart-ctn {
-    width: 80%;
-}
-
 .product-name a:link,
 .product-name a:visited {
     font-size: 1.2rem;
@@ -1717,8 +2117,14 @@ body {
     color: #959595;
 }
 
+.payment-table {
+    text-align: right;
+    font-weight: bold;
+    color: #d7202c
+}
+
 .product-total .price {
-    display: inline;
+    display: inline-flex;
 }
 
 .product-total .price .new-price,
@@ -1946,16 +2352,17 @@ textarea:focus {
     align-items: center;
 }
 
-.product-price .price .new-price {
+.product-price .price p {
     color: red;
 }
 
-.product-total .price .new-price {
+.product-total .price p {
     color: red;
 }
 
 .product-quantity {
     margin-left: 20px;
+    align-items: center;
     text-align: center;
     justify-content: center;
     width: 10%;
@@ -1966,25 +2373,8 @@ textarea:focus {
     display: flex;
 }
 
-.minus-btn,
-.plus-btn {
-    display: inline-block;
-    border: 1px solid #ccc;
-    margin-right: 0;
-    cursor: pointer;
-    align-items: center;
-}
-
-.plus-btn {
-    border-left-color: transparent;
-}
-
-.minus-btn {
-    border-right-color: transparent;
-}
-
 .counter-btn {
-    width: 4rem;
+    width: 80px;
     height: 20px;
     padding: 1rem 0;
     text-align: center;
@@ -2069,14 +2459,13 @@ textarea:focus {
 }
 
 
-/*--------------*/
+/*-------Auto Round-------*/
 
 .circle-container {
     justify-content: center;
     display: flex;
     align-items: center;
     background: #203E4E;
-    margin: 100px 0;
     width: 100%;
     height: 50vh;
 }

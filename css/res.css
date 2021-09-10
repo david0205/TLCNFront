@@ -27,7 +27,7 @@
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
     .buttons {
-        font-size: 11px;
+        font-size: 14px;
     }
 }
 
@@ -44,7 +44,7 @@
 
 /*===------Nav bar-----------*/
 
-@media screen and (min-width: 768px) and (max-width: 1300px) {
+@media screen and (min-width: 769px) and (max-width: 1300px) {
     .nav-container {
         width: 100%;
     }
@@ -69,16 +69,18 @@
         font-size: 11px;
     }
     .navbar-img {
-        height: 50px;
+        height: 40px;
     }
     .nav-item:nth-child(2) input {
         width: 100px;
         margin-right: 5px;
         font-size: 10px;
+        height: 30px;
     }
     .nav-item:nth-child(3) button {
         width: 80px;
         font-size: 12px;
+        height: 30px;
     }
     .nav-link {
         font-size: 8px;
@@ -240,6 +242,44 @@
 }
 
 
+/*-------Index Card tiêu đề-xem tất cả-------*/
+
+@media screen and (min-width: 300px) and (max-width: 500px) {
+    .index-promote {
+        width: 100%;
+    }
+    .h2-cate {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+    .index-product-container {
+        width: 100%;
+    }
+    .index-product-bottom-container {
+        width: 100%;
+    }
+    .promote-item-buy {
+        bottom: 35%;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width:768px) {
+    .index-promote {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    .promote-item-buy a,
+    button {
+        font-size: 12px;
+    }
+    .promote-item-buy {
+        bottom: 47%;
+    }
+}
+
+
 /*------------------SliderIndex-------------------*/
 
 @media screen and (min-width: 200px) and (max-width: 500px) {
@@ -263,8 +303,8 @@
         width: 1px;
     }
     .middle-container {
-        margin-top: -200px;
         width: 100%;
+        margin-top: 10px;
     }
 }
 
@@ -304,9 +344,6 @@
     }
     .slider-content-right li img {
         width: 100%;
-    }
-    .middle-container {
-        padding-top: 210px;
     }
 }
 
@@ -425,21 +462,30 @@
         margin: 0px;
         width: 100%;
     }
+    .cart-ctn {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 500px) and (max-width: 768px) {
     .page-title-container {
-        margin-left: 30px;
+        margin-left: 0px;
     }
     .card-checkout {
         margin: 0px;
         width: 100%;
     }
+    .cart-ctn {
+        width: 100%;
+    }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
     .form-control-label {
         font-size: 12px;
+    }
+    .page-title-container {
+        margin-left: 70px;
     }
 }
 
@@ -471,11 +517,45 @@
 /*--------------------Circle round------------*/
 
 @media screen and (min-width: 300px) and (max-width: 500px) {
+    .middle-container1 {
+        padding-top: 12px;
+        width: 100%;
+    }
+    .category-product-container {
+        width: 100%;
+    }
+    .ctg-row {
+        margin: 0 6px;
+    }
+    .laptop-hoctap-container {
+        width: 100%;
+    }
+    .laptophoctap-row {
+        margin: 0 6px;
+    }
+    .neon-button3 {
+        padding: 10px 20px;
+        letter-spacing: 2px;
+    }
+    .neon-button3:hover {
+        padding: 10px 20px;
+        letter-spacing: 2px;
+    }
+    .laptop-dohoakythuat-container {
+        background-color: #2d4b68;
+    }
+    .laptop-dohoakythuat {
+        width: 100%;
+    }
+    .neon-button2 {
+        font-size: 11px;
+        padding: 10px 20px;
+        letter-spacing: 2px;
+    }
     .box span {
-        transform: rotateY(calc(var(--i) * 45deg)) translateZ(200px);
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(180px);
     }
     .circle-container {
-        margin: 50px 0;
         align-items: center;
         text-align: center;
         height: 150px;
@@ -494,10 +574,19 @@
         transform: rotateY(calc(var(--i) * 45deg)) translateZ(300px);
     }
     .circle-container {
-        margin: 50px 0;
+        padding: 12px 0;
         align-items: center;
         text-align: center;
         height: 230px;
+    }
+    .laptop-dohoakythuat {
+        width: 100%;
+    }
+    .laptop-hoctap-container {
+        width: 100%;
+    }
+    .laptophoctap-row {
+        margin: 0 3px;
     }
     .box span img {
         line-height: 200px
@@ -508,12 +597,11 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1100px) {
+@media screen and (min-width: 769px) and (max-width: 1100px) {
     .box span {
         transform: rotateY(calc(var(--i) * 45deg)) translateZ(350px);
     }
     .circle-container {
-        margin: 50px 0;
         align-items: center;
         text-align: center;
         height: 330px;
